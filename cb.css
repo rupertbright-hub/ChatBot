@@ -1,0 +1,198 @@
+/* MAIN */
+
+/* CUSTOM CSS COLOUR VARIABLES */
+
+:root {
+    --bluebg: rgb(58,69,180);
+    --bluelg: linear-gradient(90deg, rgba(58,69,180,1) 33%, rgba(138,160,217,1) 100%, rgba(252,176,69,1) 100%); 
+    --greybg: rgb(230,221,221);
+    --greylg: linear-gradient(270deg, rgba(230,221,221,1) 12%, rgba(222,222,222,1) 96%);
+}
+
+/* MAIN */
+
+body{
+        margin: auto 0;
+}
+
+h2{
+        margin-top: 10px;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 15px;
+}
+
+button {
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: black;
+        margin: 22px 10px 10px 10px;
+        background: var(--bluebg);
+        background: var(--bluelg) ;
+        border: 3px;
+        color: white;
+        width: 85px;
+}
+
+input{
+        font-family: 'Caveat', cursive;
+        font-size: large;
+}
+
+hr{
+width:70%; 
+    margin:5 auto; 
+    border:0px none white; 
+    border-top:1px solid lightgrey; 
+}
+
+p{
+        margin-top:0px;
+        margin-left: 12px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: small;
+        font-style: italic;
+}
+
+#layout{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+}
+
+.container-one{
+        width:400px;
+        height: 420px;
+        -webkit-box-shadow: 2px 2px 55px -29px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 2px 55px -29px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 55px -25px rgba(0,0,0,0.75);
+        margin-right: 20px;
+        border-radius: 20px;;
+}
+
+/* FIRST INPUT FORM */
+
+.form-input input {
+        padding: 15px;
+        width: 250px;
+        margin: 10px;
+        background: var(--greybg);
+        background: var(--greylg) ;
+        border: none;
+        border-bottom-right-radius: 50% 20%;
+}
+
+
+#user-input {
+  width: 400px;
+  border-radius: 20px;
+  margin: 5px;
+-webkit-box-shadow: 2px 2px 55px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 2px 55px -10px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 55px -25px rgba(0,0,0,0.75);
+
+}
+
+/* MAIN CHAT BOT SECTION */
+
+.chat-box {
+  margin-top: 5px;
+  height: 400px;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0px;
+}
+
+.bot {
+  background: var(--bluebg);
+  background: var(--bluelg) ; 
+  padding: 8px;
+  border-radius: 10px;
+  margin: 20px;
+  font-size: medium;
+  text-align: left;
+  min-width: 100px;
+  max-width:200px;
+  color:white;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.user {
+background: var(--greybg);
+ background: var(--greylg) ;
+  padding: 8px;
+  border-radius: 10px;
+  margin: 20px;
+  font-size: larger;
+  text-align: right;
+  min-width: 100px;
+  max-width:200px;
+  margin-left:auto;
+  font-family: 'Caveat', cursive;
+}
+
+.bot > .time {
+  color: white;
+  font-size: x-small;
+}
+
+.user > .time {
+  color: black;
+  font-size: x-small;
+}
+
+/* CHAT BOT INPUT SECTION */
+
+.header{
+        background: var(--bluebg);
+        background: var(--bluelg) ;  
+        border-bottom-right-radius: 50% 20%;
+        height: 100px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+}
+
+.header img{
+        height: 55px;
+        width:55px;
+        padding: 15px;
+}
+
+.submit-box {
+  width: 374px;
+  text-align: left;
+  border:none;
+  outline:none;
+  height: 90px;
+  background: var(--greybg);
+ background: var(--greylg);
+ font-family: 'Caveat', cursive;
+ font-size: 1.65rem;
+ padding: 8px;
+ border-top-left-radius: 50% 20%;
+ padding-left: 20px;
+}
+
+:placeholder-shown{
+        font-family: 'Caveat', cursive;
+        font-size: large;
+}
+.submit-box:placeholder-shown{
+        font-size: x-large;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+
+
+
+
+
+

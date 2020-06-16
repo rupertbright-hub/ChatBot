@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat Bot</title>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="cb.css">
+</head>
+
+<body>
+        <div id="layout">
+                <div class='container-one'>
+                        <h2>Please submit the form below to start chatting to our team!</h2>
+                        <form class='form-input'>
+                                <input type="text" name="name" placeholder="Name (Required)" autocomplete="off" required><br>
+                                <input pattern="[0-9]{6}" class="vali" type="text" name="order" placeholder="Order No. (Required)" autocomplete="off" required><br>
+                                <p>Order no. must be 6 digits</p>
+                                <button type="submit">submit</button>
+                        </form>
+                </div>
+
+
+                <div id='user-input'>
+                        <div class='header'>
+                                <h2>Chat with us!</h2>
+                                <img src="https://img.icons8.com/fluent/48/000000/chat.png"/>
+                        </div>
+                        <div class="chat-box"></div>
+                        <hr>
+                        <form class='submit-form'>
+                                <input class='submit-box' type="text" name="userInput" placeholder="Please type you message here!" autocomplete="off"><br>
+                        </form>
+                </div>
+        </div>
+
+<script src='cb.js'></script>
+</body>
+</html>
